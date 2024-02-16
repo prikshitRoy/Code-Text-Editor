@@ -1,8 +1,20 @@
-# React + Vite
+# Monaco Editor Example with React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### I used this video:
 
-Currently, two official plugins are available:
+[Build a Code Text Editor in React in 10 Minutes (Syntax Highlighting, Dark Theme)](https://www.youtube.com/watch?v=WiacAGLd9so)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm create vite@latest code-text-editor -- --template react`
+
+`npm install @monaco-editor/react`
+
+Start dev: `npm run dev`
+
+## 1. Be able to change from 1 file to next
+
+Every single file have three different things: `A file path (name)`, `language` and `default value`
+
+## 2. Geting the value of the Monaco editor
+
+- Passing Monaco editor value to handleEditorDidMount function when Editor Mounts.
+- Getting Monaco editor value with getEditorValue fuction with Get Editor Value button.
